@@ -29,7 +29,35 @@
 * `pandas`: 核心数据处理库，用于构建和操作结果表格。
 * `openpyxl`: pandas 写入 `.xlsx` 格式 Excel 文件的后端引擎。
 
-你可以使用 Python 包管理器 `pip` 来一次性安装所有必需的库。在你的终端或命令行中执行以下命令：
+**安装步骤：**
+
+1.  使用 pip 安装所有依赖项。在你的终端或命令行中执行以下命令：
+
+    ```bash
+    pip install requests beautifulsoup4 colorama pandas openpyxl
+    ```
+
+2.  如果你的系统配置了多个 Python 版本，并且 `pip` 默认指向的是 Python 2 或其他版本，请尝试使用 `pip3` 来为 Python 3 安装库：
+
+    ```bash
+    pip3 install requests beautifulsoup4 colorama pandas openpyxl
+    ```
+
+3.  为了保持项目的依赖清晰和环境隔离，强烈建议在一个 [Python 虚拟环境](https://docs.python.org/3/library/venv.html) 中安装这些库。
+
+## 安装
+
+1.  将此代码保存为一个 Python 文件，例如 `web_detector.py`。
+2.  打开你的终端或命令行界面，导航到你保存 `web_detector.py` 文件的目录。
+3.  按照上述“依赖项”部分的说明，确保所有必需的库都已安装。
+
+无需其他特殊的安装步骤，脚本本身就是一个可执行文件。
+
+## 使用方法
+
+脚本通过命令行参数来接收输入和配置行为。
+
+首先，你可以运行以下命令来查看脚本的命令行参数帮助信息：
 
 ```bash
-pip install requests beautifulsoup4 colorama pandas openpyxl
+python web_detector.py -h
