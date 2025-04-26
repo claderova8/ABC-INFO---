@@ -61,3 +61,5 @@
 
 ```bash
 python web_detector.py -h
+
+![image](https://github.com/user-attachments/assets/7bedc068-f996-4c3e-a275-4687cf501499)
